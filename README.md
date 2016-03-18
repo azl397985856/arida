@@ -1,8 +1,9 @@
 ## Introduction
  ```bash
- A libabry for subcribing data what you'r interesting. 
- when the part of data what you have subcibed has changed, the callback you  have registered will be triggered;
- This is a data flow libary extends flux or reflux, you can pass data from compontents to its children or sibings. 
+   A libabry for subcribing data what you'r interesting. 
+   when the part of data what you have subcibed has changed,
+ the callback you  have registered will be triggered;
+   This is a data flow libary extends flux or reflux, you can pass data from compontents to its children or sibings. 
 ```
 ## Install
 
