@@ -30,3 +30,5 @@ Run the example above, you will get {name: 'lucy'} on your console.
 ## Contributing
 
 We welcome all contributions, please submit any ideas as [pull requests](https://github.com/azl397985856/arida/pulls) or as a [GitHub issue](https://github.com/azl397985856/arida/issues).
+## Licence
+MIT
