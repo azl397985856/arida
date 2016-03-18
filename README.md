@@ -14,7 +14,7 @@ npm install arida
 import arida from 'arida';
 const source = {name: 'aa', id: 2, dept: 'math'};
 arida.init(source);
-arida.subcribe('name', (payload) => {
+arida.subcribe(['name', 'id'], (payload) => {
   console.log(payload);
 });
 arida.update({
