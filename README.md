@@ -10,10 +10,21 @@ npm install arida
 
 ## Usage example
 
-``` api
-import { api } from 'arida';
-api.subcribe('name', callback);
+``` javascript
+import arida from 'arida';
+const source = {name: 'aa', id: 2, dept: 'math'};
+arida.init(source);
+arida.subcribe('name', (payload) => {
+  console.log(payload);
+});
+arida.update({
+  name: 'lucy',
+});
+arida.update({
+  dept: 'chinese',
+});
 ```
+Run the example above, you will get {name: 'lucy'} on your console.
 
 
 ## Contributing
