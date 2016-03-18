@@ -26,7 +26,13 @@ arida.update({
 ```
 Run the example above, you will get {name: 'lucy'} on your console.
 
+## API
+The following is an incomplete list of arida API. It should give you a general concept of arida's usage.
 
+- `.init(object)`: Returns target object;
+- `.subcribe(keys, callback)`: subcribe the key(string) or keys(array) that you'r interesting;
+- `.update(data)`: update date and dispatch its changes to observers;
+- `.get()`: Returns target object;
 ## Contributing
 
 We welcome all contributions, please submit any ideas as [pull requests](https://github.com/azl397985856/arida/pulls) or as a [GitHub issue](https://github.com/azl397985856/arida/issues).
