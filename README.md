@@ -1,6 +1,6 @@
 ## Introduction
-一个用于数据订阅的工具库，尤其适用于扩展react，以允许子组件可以订阅父组件的数据，当父组件的数据更新时，及时更新子组件数据。
-
+A libabry for subcribing data what you'r interesting. when the part of data what you have subcibed has changed, the callback you  have registered will be triggered;
+This is a data flow libary extends flux or reflux, you can pass data from compontents to its children or sibings. 
 
 ## Install
 
