@@ -30,7 +30,7 @@ Run the example above, you will get {name: 'lucy'} on your console.
 The following is an incomplete list of arida API. It should give you a general concept of arida's usage.
 
 - `.init(object)`: Returns target object;
-- `.subcribe(keys, callback)`: subcribe the key(string) or keys(array) that you'r interesting;
+- `.subcribe(keys, callback)`: subcribe the key(string) or keys(array), even an object that you'r interesting;
 - `.update(data)`: update date and dispatch its changes to observers;
 - `.get()`: Returns target object;
 
