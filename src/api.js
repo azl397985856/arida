@@ -22,6 +22,9 @@ module.exports = {
 			console.error('subcribe\'s first argument must by a key, list of keys or <obje></obje>ct, please check your argument and try again!');
 		}
 	},
+	forceUpdate: function forceUpdate(data) {
+		setSource(data, true);
+	},
 	update(data) {
 		setSource(data);
 	},
@@ -29,10 +32,10 @@ module.exports = {
 		return getSource();
 	}
 }
-function dispatch(data) {
+function dispatch(data, isForce) {
 	for (let key in data) {
 		if (Object.prototype.hasOwnProperty.call(data, key)) {
-			if (src[key] == data[key]){
+			if (!isForce && src[key] == data[key]){
 				return;
 			} else {
 				core.trigger(key, data);
@@ -43,8 +46,8 @@ function dispatch(data) {
 function getSource() {
 	return src;
 };
-function setSource(data) {
-	dispatch(data);
+function setSource(data, isForce) {
+	dispatch(data, isForce);
 	for (let key in data) {
 		if (Object.prototype.hasOwnProperty.call(data, key)) {
 			src[key] = data[key];
